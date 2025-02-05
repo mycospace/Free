@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stimmungs-Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Meine Stimmungs-App</h1>
+  </header>
+
+  <main>
+    <!-- Stimmungseingabe -->
+    <section id="mood-input-section">
+      <h2>Wie fühlst du dich gerade?</h2>
+      <div class="mood-input">
+        <input type="range" id="mood-range" min="1" max="10" value="5" />
+        <span id="mood-value">5</span>
+      </div>
+      <button id="save-mood">Stimmung speichern</button>
+    </section>
+
+    <!-- Aktuelle Stimmung und Verlauf -->
+    <section id="mood-display-section">
+      <h2>Dein Stimmungsverlauf</h2>
+      <ul id="mood-list">
+        <!-- Dynamische Einträge erscheinen hier -->
+      </ul>
+    </section>
+
+    <!-- Stimmungsimpulse -->
+    <section id="mood-impulse-section">
+      <h2>Impuls</h2>
+      <div id="impulse-container">
+        <!-- Z.B. ein inspirierendes Zitat oder Übung -->
+        <blockquote id="impulse-text"></blockquote>
+      </div>
+      <button id="new-impulse">Neuen Impuls anzeigen</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Meine Stimmungs-App</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
