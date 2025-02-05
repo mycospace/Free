@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#mood-input-section,
+#mood-display-section,
+#mood-impulse-section {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.mood-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#mood-range {
+  flex: 1;
+}
+
+#mood-value {
+  font-weight: bold;
+}
+
+#save-mood,
+#new-impulse {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #5f9ea0;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#mood-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#mood-list li {
+  margin-bottom: 0.5rem;
+}
+
+#impulse-container {
+  margin-top: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+  color: #666;
+}
